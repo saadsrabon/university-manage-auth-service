@@ -1,6 +1,7 @@
 class ApiError extends Error {
   statusCode: number
-  constructor(statusCode: number, message: string, stack = '') {
+
+  constructor(statusCode: number, message: string | undefined, stack = '') {
     super(message)
     this.statusCode = statusCode
     if (stack) {

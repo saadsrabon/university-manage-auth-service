@@ -1,8 +1,15 @@
 // create a route moduler pattern
 
 import express from 'express'
-import { getUser } from './user.controller'
-const router = express.Router()
-router.get('/create-user', getUser)
+import { UserController } from './user.controller'
+import { UserValidation } from '../../middlewares/validateRequest'
+import { UserValidationSchema } from './user.validation'
 
-export default router
+const router = express.Router()
+router.get(
+  '/create-user',
+  UserValidation.ValidationRequest(UserValidationSchema.createUserZodSchema),
+  UserController.getUser
+)
+
+export const UserRouter = router
