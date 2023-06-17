@@ -10,7 +10,7 @@ const handleZodError = (error: ZodError): IGenericErrorResponse => {
     return {
       // taking second index as it is the last one
       path: issue?.path[issue.path.length - 1],
-      message: issue.message,
+      message: issue?.message,
     }
   })
   // zod handles  returning this

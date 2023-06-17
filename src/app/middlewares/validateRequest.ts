@@ -17,6 +17,4 @@ const ValidationRequest =
     }
   }
 
-export const UserValidation = {
-  ValidationRequest,
-}
+export default ValidationRequest
