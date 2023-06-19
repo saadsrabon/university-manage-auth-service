@@ -5,12 +5,13 @@ import express from 'express'
 
 import ValidationRequest from '../../middlewares/validateRequest'
 import { AcademicSemisterValidation } from './academicsemister.validation'
+import createSemisterController from './academicController'
 
 const router = express.Router()
-router.get(
-  '/create-user',
-  ValidationRequest(AcademicSemisterValidation.AcademicSemisterZodSchema)
-  //   UserController.getUser
+router.post(
+  '/create-semister',
+  ValidationRequest(AcademicSemisterValidation.AcademicSemisterZodSchema),
+  createSemisterController
 )
 
-export const UserRouter = router
+export const SemisterRouter = router

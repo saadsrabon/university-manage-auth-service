@@ -8,6 +8,7 @@ import {
   academicSemesterTitles,
   acdemicSemesterMonths,
 } from './academicSemister.constant'
+import ApiError from '../../errors/ApiError'
 
 const AcademicSemiterschema = new Schema<academicSemister>(
   {
@@ -41,6 +42,17 @@ const AcademicSemiterschema = new Schema<academicSemister>(
   }
 )
 
+AcademicSemiterschema.pre('save', async function (next) {
+  // do stuff
+  const isExist = await AcademicSemister.findOne({
+    title: this.title,
+    year: this.year,
+  })
+  if (isExist) {
+    throw new ApiError(400, 'Same year and semister found')
+  }
+  next()
+})
 export const AcademicSemister = model<academicSemister, AcademicSemisterModel>(
   'AcademicSemister',
   AcademicSemiterschema

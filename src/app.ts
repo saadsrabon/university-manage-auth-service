@@ -1,6 +1,6 @@
 import express, { Application, Request, Response } from 'express'
 import golbalErrorHandler from './app/middlewares/globalError'
-import { UserRouter } from './app/modules/user/user.routes'
+import routes from './app/routes/routes'
 // import ApiError from './app/errors/ApiError'
 const app: Application = express()
 
@@ -8,7 +8,7 @@ app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true }))
 
 // for parsing application/x-www-form-urlencoded
-app.use('/api/v2', UserRouter)
+app.use('/api', routes)
 
 // we use  it before here because we want to use it in all routes
 //  class ApiError  extends Error {
