@@ -5,7 +5,11 @@ import express from 'express'
 
 import ValidationRequest from '../../middlewares/validateRequest'
 import { AcademicSemisterValidation } from './academicsemister.validation'
-import createSemisterController from './academicController'
+import createSemisterController, {
+  getSemisterController,
+  getSingleSemister,
+  updateSemister,
+} from './academicController'
 
 const router = express.Router()
 router.post(
@@ -13,5 +17,11 @@ router.post(
   ValidationRequest(AcademicSemisterValidation.AcademicSemisterZodSchema),
   createSemisterController
 )
+// update routes
+router.patch('/:id', updateSemister)
+// get single semister
+router.get('/:id', getSingleSemister)
+// get all semister with filter and serach dynamically
+router.get('/', getSemisterController)
 
 export const SemisterRouter = router

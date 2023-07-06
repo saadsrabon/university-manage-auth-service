@@ -44,6 +44,21 @@ app.get('/', async (req: Request, res: Response) => {
   // throw new Error('Oreh Baba errror');
 })
 
+// handle route not found
+
+app.use((req: Request, res: Response) => {
+  res.status(404).json({
+    success: false,
+    message: 'Route Not Found',
+    errorMessage: [
+      {
+        path: req.originalUrl,
+        message: 'Route Not Found',
+      },
+    ],
+  })
+})
+
 app.use(golbalErrorHandler)
 
 export default app

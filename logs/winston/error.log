@@ -1,2 +1,26 @@
 2023-06-14T21:57:52.956Z [right meow!] error: Database Connection Failed s is not defined
 2023-06-14T21:58:41.781Z [right meow!] error: Database Connection Failed s is not defined
+2023-06-23T12:22:17.752Z [right meow!] error: Failed to connect database querySrv ECONNREFUSED _mongodb._tcp.cluster0.m7yngom.mongodb.net
+2023-06-23T16:36:27.166Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T17:46:49.601Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T17:49:20.209Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T20:41:39.874Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T20:45:54.040Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T20:52:44.835Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T23:05:13.339Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T23:07:38.245Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T23:13:01.591Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T23:16:57.442Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T23:20:48.701Z [right meow!] error: Failed to connect database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2023-06-23T23:20:50.940Z [right meow!] error: Failed to connect database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2023-06-23T23:20:52.447Z [right meow!] error: Failed to connect database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2023-06-23T23:20:54.045Z [right meow!] error: Failed to connect database The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2023-06-23T23:22:38.392Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T23:24:14.887Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T23:26:10.206Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T23:31:46.831Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T23:33:33.727Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-23T23:44:20.597Z [right meow!] error: Failed to connect database queryTxt ETIMEOUT cluster0.m7yngom.mongodb.net
+2023-06-25T12:33:09.107Z [right meow!] error: Failed to connect database Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-06-27T10:30:29.620Z [right meow!] error: Failed to connect database Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+2023-06-30T10:07:33.293Z [right meow!] error: Failed to connect database Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/

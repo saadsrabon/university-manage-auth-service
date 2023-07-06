@@ -1,7 +1,7 @@
 import { Schema, model } from 'mongoose'
 import {
   AcademicSemisterModel,
-  academicSemister,
+  IacademicSemister,
 } from './academicSemister.interface'
 import {
   academicSemesterCodes,
@@ -10,7 +10,7 @@ import {
 } from './academicSemister.constant'
 import ApiError from '../../errors/ApiError'
 
-const AcademicSemiterschema = new Schema<academicSemister>(
+const AcademicSemiterschema = new Schema<IacademicSemister>(
   {
     title: {
       type: String,
@@ -53,7 +53,7 @@ AcademicSemiterschema.pre('save', async function (next) {
   }
   next()
 })
-export const AcademicSemister = model<academicSemister, AcademicSemisterModel>(
+export const AcademicSemister = model<IacademicSemister, AcademicSemisterModel>(
   'AcademicSemister',
   AcademicSemiterschema
 )
